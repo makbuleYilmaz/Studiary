@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>contact</title>
+    <link href="../css/iletisim.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="message">
+      <h2>Contact Us</h2>
+      <form class="message" action="iletisim.php" method="POST">
+        <input
+          class="box"
+          type="text"
+          name="name"
+          placeholder="Name:"
+          required
+        />
+        <input
+          class="box"
+          type="email"
+          name="email"
+          placeholder="E-mail"
+          required
+        />
+        <textarea
+          class="box"
+          name="message"
+          placeholder="Mesagge"
+          required
+        ></textarea>
+        <button class="box" type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>
