@@ -1,0 +1,115 @@
+/* resmin konumu */
+.bottom-right-image {
+    position:absolute;
+    top: 100px; 
+    right: 110px;  
+}
+
+.bottom-right-image img {
+    width: 600px; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Genel Stil */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Form Konteyneri */
+.form-container {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    margin-right: 500px;
+}
+
+/* Başlık */
+.form-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Input Grupları */
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 16px;
+    background: #f9f9f9;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #764ba2;
+    background: #fff;
+ 
+}
+
+/* Buton */
+.form-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background: #667eea;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-button:hover {
+    background: #764ba2;
+}
+
+/* Link */
+.form-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.form-link a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.form-link a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* Formların Görünürlüğü */
+.login-form-container,
+.register-form-container {
+    display: none;
+}
+
+.login-form-container.active,
+.register-form-container.active {
+    display: block;
+}

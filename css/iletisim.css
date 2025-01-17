@@ -1,0 +1,56 @@
+ body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y:scroll;
+    background-image: url('../img/canva.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: #555;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 0 0 15px 0;
+    text-align: center;
+    font-weight:bold; 
+    color: rgb(98, 98, 210);
+    font-size:50;
+    font-weight: 300;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.box{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    padding: 1em 1em;
+    
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(164, 133, 233);
+}

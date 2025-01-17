@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>log in</title>
+        <link href="../css/login.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+    <div class="form-container">
+        <!-- Login Form -->
+        <div class="login-form-container active">
+            <h1 style="color: rgb(127, 178, 255); font-family:'Times New Roman', Times, serif;"><i>Welcome to STUDIARY!</i></h1>
+            <form class="login-form">
+                <div class="input-group">
+                    <input type="email" id="login-email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="form-button">Login</button>
+                <p class="form-link">Don't have an account? <a href="#" id="show-register">Register</a></p>
+            </form>
+        </div>
+
+        <!-- Register Form -->
+        <div class="register-form-container">
+            <h1 style="color: rgb(127, 178, 255); font-family:'Times New Roman', Times, serif;"><i>Create an Account</i></h1>
+            <form class="register-form">
+                <div class="input-group">
+                    <input type="text" id="full-name" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="register-email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="register-password" placeholder="Create a password" required>
+                </div>
+                <button type="submit" class="form-button">Register</button>
+                <p class="form-link">Already have an account? <a href="#" id="show-login">Login</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+
+        <div class="bottom-right-image">
+            <img src="../img/ders.jpg" alt="Description">
+        </div>
+
+
+    </body>
+
+</html>

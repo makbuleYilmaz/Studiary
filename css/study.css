@@ -1,0 +1,213 @@
+.music-image{
+    background-image: url(../img/snoopy.jpg);
+    background-color:lightblue;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    color: rgb(99, 23, 160);
+    margin-left: 60px;    
+    position:absolute;
+    bottom: 0; 
+    right: 30px;  
+}
+
+body {
+    background-color: rgb(251, 255, 239);
+    font-family: "Courier New", Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    border: 25px solid pink; 
+    padding: 20px; 
+}
+
+.todo-container {
+    position: absolute; 
+    top: 15%; 
+    left: 20px;
+    width: 500px; 
+    height: 120%;
+}
+
+.todo-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100px; 
+    width: 500px; 
+    height: 110%;
+    pointer-events: none;
+}
+
+  .todo-list {
+    margin-top: 10px;
+  }
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 5px;
+    border-bottom: 1px solid #dcdcdc;
+    height: auto;
+    font-weight: 400;
+    width: 100%; 
+}
+
+h2 {
+    margin: 0 0 15px 0;
+    color: #555;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold; 
+}
+
+  .todo-item:last-child {
+    border-bottom: none;
+  }
+
+  .todo-item input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #e6a819;
+    width: 20px;
+    height: 20px;
+  }
+
+  .todo-item input[type="text"] {
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    font-family: "Courier New", Courier, monospace;
+    width: 100%;
+    outline: none;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .todo-item input[type="checkbox"]:checked + input[type="text"] {
+    text-decoration: line-through;
+    color: #888;
+  }
+
+  footer {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+    font-style: italic;
+  }
+
+.timer-display {
+    font-family: 'Arial', sans-serif;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    padding: 20px 50px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 60px;     
+    position: fixed;
+    top: 180px; 
+    right: 240px; 
+}
+.kutu2{
+    
+    background-image: url(../img/clockk.png);
+    background-color:lightblue;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 450px;
+    color: rgb(99, 23, 160);
+    margin-left: 60px; 
+    position:absolute;
+    top: 90px;
+    right: 150px;  
+}
+
+.timer-display span {
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 2.5rem;
+}
+.controls {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    background: rgba(197, 157, 248, 0.337);
+    color: white;
+    padding: 20px 50px;
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    margin-top: 110px;
+    margin-left: 700px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    width: 80px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #7c36d7;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5686c6;
+}
+
+.music-image:hover {
+    transform: scale(1.1);
+}
+
+.music-options {
+    display: none;
+    position: absolute; 
+    right:230px; 
+    top: 85%; 
+    transform: translateY(-50%); 
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: left 0.3s ease; 
+}
+
+.music-options button {
+    background-color: #e6a819;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.music-options button:hover {
+    background-color: #d78b17;
+}
+
+.music-options.show {
+    display: block;
+    width: 450px; 
+}
+

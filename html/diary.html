@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>diary</title>
+    <link rel="stylesheet" href="../css/diary.css">
+</head>
+<body>
+    <div class="mode-selector">
+        <h2 style="color: rgb(127, 127, 231); font-size:50;font-weight: 300;font-family:Georgia, 'Times New Roman', Times, serif;"><i>Choose Your Mode</h2>
+        <div class="modes">
+            <div class="mode" id="mode-1" onclick="changeMode('😊')">
+                <span class="emoji">😊</span>
+            </div>
+            <div class="mode" id="mode-2" onclick="changeMode('😭')">
+                <span class="emoji">😭</span>
+            </div>
+            <div class="mode" id="mode-3" onclick="changeMode('🥳')">
+                <span class="emoji">🥳</span>
+            </div>
+            <div class="mode" id="mode-4" onclick="changeMode('🤔')">
+                <span class="emoji">🤔</span>
+            </div>
+            <div class="mode" id="mode-5" onclick="changeMode('😴')">
+                <span class="emoji">😴</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Yazı ve Fotoğraf Alanı -->
+    <div class="note-container">
+        <h3 style="color: rgb(127, 127, 231); font-size:50;font-weight: 300;font-family:Georgia, 'Times New Roman', Times, serif;"><i>Add text and photo</i></h3>
+        <textarea id="note-text" placeholder="How was your day?"></textarea>
+        <input type="file" id="file-input" accept="image/*">
+        <button onclick="saveNote()">save</button>
+    </div>
+
+    <div class="saved-notes">
+        <!-- Burada her gün kaydedilen yazılar ve fotoğraflar alt alta gösterilecek -->
+    </div>
+
+    <script src="../js/diary.js"></script>
+</body>
+</html>

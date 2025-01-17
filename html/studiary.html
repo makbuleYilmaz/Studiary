@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>studiary</title>
+        <link href="../css/studiary.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="baslik">
+            <h1 style="color: rgb(98, 98, 210); font-size:50;font-weight: 300;"><i>Studiary</i></h1>
+            <a href="../html/login.html" class="login-button">Log In</button>
+        </div>
+
+<nav class="site-menu">
+    <ul>
+        <li><a href="../html/studysayfa.html">Study</a></li>
+        <li><a href="../html/diary.html">Diary</a></li>
+        <li><a href="../html/iletisim.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Takvim Bölümü -->
+<div class="calendar-container">
+    <div class="calendar">
+       
+        <div class="day-header">Sunday</div>
+        <div class="day-header">Monday</div>
+        <div class="day-header">Tuesday</div>
+        <div class="day-header">Wednesday</div>
+        <div class="day-header">Thursday</div>
+        <div class="day-header">Friday</div>
+        <div class="day-header">Saturday</div>
+
+        <div class="day"></div> 
+        <div class="day" data-day="1">1</div>
+        <div class="day" data-day="2">2</div>
+        <div class="day" data-day="3">3</div>
+        <div class="day" data-day="4">4</div>
+        <div class="day" data-day="5">5</div>
+        <div class="day" data-day="6">6</div>
+        <div class="day" data-day="7">7</div>
+        <div class="day" data-day="8">8</div>
+        <div class="day" data-day="9">9</div>
+        <div class="day" data-day="10">10</div>
+        <div class="day" data-day="11">11</div>
+        <div class="day" data-day="12">12</div>
+        <div class="day" data-day="13">13</div>
+        <div class="day" data-day="14">14</div>
+        <div class="day" data-day="15">15</div>
+        <div class="day" data-day="16">16</div>
+        <div class="day" data-day="17">17</div>
+        <div class="day" data-day="18">18</div>
+        <div class="day" data-day="19">19</div>
+        <div class="day" data-day="20">20</div>
+        <div class="day" data-day="21">21</div>
+        <div class="day" data-day="22">22</div>
+        <div class="day" data-day="23">23</div>
+        <div class="day" data-day="24">24</div>
+        <div class="day" data-day="25">25</div>
+        <div class="day" data-day="26">26</div>
+        <div class="day" data-day="27">27</div>
+        <div class="day" data-day="28">28</div>
+        <div class="day" data-day="29">29</div>
+        <div class="day" data-day="30">30</div>
+    </div>
+    
+</div>
+
+    <div id="note-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Add Note</h2>
+            <textarea id="note-input" placeholder="writing..."></textarea>
+            <button id="save-note">Save</button>
+        </div>
+    </div>
+
+    <script src="../js/studiary.js"></script>
+<div class="formdiv">
+<table>
+    <tr>
+        <td colspan="2"><textarea name="" id="dontForget" cols="40" rows="10" placeholder="DON'T FORGET !!!"></textarea></td>
+        <td colspan="2"><textarea name="" id="goalsThisMonth" cols="40" rows="10" placeholder="My goals for this month:"></textarea></td>
+    </tr>
+</table>
+</div>
+
+<div class="bottom-right-image">
+    <img src="../img/ayı.jfif" alt="Description">
+</div>
+
+<div class="todo-container">
+    <h2 style="color: rgb(127, 127, 231); font-size:50;font-weight: 300;font-family:Georgia, 'Times New Roman', Times, serif;"><i>Watch and Read List</i></h2>
+    <div class="todo-list">
+      <div class="todo-item">
+        <input type="checkbox">
+        <input type="text" placeholder="to watch">
+      </div>
+      <div class="todo-item">
+        <input type="checkbox">
+        <input type="text" placeholder="to watch">
+      </div>
+      <div class="todo-item">
+        <input type="checkbox">
+        <input type="text" placeholder="to watch">
+      </div>
+      <div class="todo-item">
+        <input type="checkbox">
+        <input type="text" placeholder="to watch">
+      </div>
+      <div class="todo-item">
+        <input type="checkbox">
+        <input type="text" placeholder="to watch">
+      </div>
+      <div class="todo-item">
+        <input type="checkbox">
+        <input type="text" placeholder="to watch">
+      </div>
+      <div class="todo-item">
+        <input type="checkbox">
+        <input type="text" placeholder="to read">
+      </div>
+      <div class="todo-item">
+        <input type="checkbox">
+        <input type="text" placeholder="to read">
+      </div>
+      <div class="todo-item">
+        <input type="checkbox">
+        <input type="text" placeholder="to read">
+      </div>
+      <div class="todo-item">
+        <input type="checkbox">
+        <input type="text" placeholder="to read">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+

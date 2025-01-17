@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Study</title>
+    <link href="../css/study.css" rel="stylesheet">
+    </head>
+    <body>
+
+
+        <div class="todo-container">
+            <b><h2>To-Do List</h2></b>
+            <div class="todo-list">
+              <!--maddeler -->
+              <div class="todo-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Write task 1">
+              </div>
+              <div class="todo-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Write task 2">
+              </div>
+              <div class="todo-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Write task 3">
+              </div>
+              <div class="todo-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Write task 4">
+              </div>
+              <div class="todo-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Write task 5">
+              </div>
+              <div class="todo-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Write task 6">
+              </div>
+              <div class="todo-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Write task 7">
+              </div>
+              <div class="todo-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Write task 8">
+              </div>
+              <div class="todo-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Write task 9">
+              </div>
+              <div class="todo-item">
+                <input type="checkbox">
+                <input type="text" placeholder="Write task 10">
+              </div>
+            </div>
+            <footer>Stay on track! 📝</footer>
+          </div>
+
+          <div class="kutu2" ></div>
+          <div class="timer-display">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        
+        <div class="controls">
+            <input type="number" id="minutesInput" placeholder="minutes" min="0" max="59" />
+            <span>:</span>
+            <input type="number" id="secondsInput" placeholder="seconds" min="0" max="59" />
+            <button onclick="startTimer()">start</button>
+            <button onclick="stopTimer()">stop</button>
+            <button onclick="resetTimer()">reset</button>
+        </div>
+ <!-- Resim -->
+ <img src="../img/snoopy.jpg" alt="Müzik Seçenekleri" class="music-image" onclick="showMusicOptions()">
+
+ <!-- Müzik seçenekleri ve kontrol butonları -->
+ <div id="music-options" class="music-options">
+     <button onclick="playMusic('../music/Clair-de-lune-piano.mp3')">lune</button>
+     <button onclick="playMusic('../music/mell-ø - nova 4.mp3')">lofi</button>
+     <button onclick="playMusic('../music/Pixies - Where Is My Mind _ Fight Club Theme _ Piano Cover 4.mp3')">pixies</button>
+     <button onclick="stopMusic()">stop</button>
+ </div>
+
+ <!-- Arka planda çalan müzik -->
+ <audio id="background-music" loop>
+     <source src="../music/Clair-de-lune-piano.mp3" type="audio/mp3">
+     Tarayıcınız ses dosyasını desteklemiyor.
+     <source src="../music/mell-ø - nova 4.mp3" type="audio/mp3">
+     Tarayıcınız ses dosyasını desteklemiyor.
+     <source src="../music/Pixies - Where Is My Mind _ Fight Club Theme _ Piano Cover 4.mp3" type="audio/mp3">
+     Tarayıcınız ses dosyasını desteklemiyor.
+ </audio>
+        <script src="../js/study.js"></script>
+    </body>
+</html>
+

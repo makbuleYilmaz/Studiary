@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y:scroll; 
+    background-image: url('../img/indir.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.mode-selector{
+    position: sticky;
+    top: 0;
+    z-index: 10; 
+    width: 80%;
+    max-width: 600px;
+    margin-top: 10px;
+    text-align: center;
+    left:40px;
+}
+.note-container {
+    position: sticky;
+    top: 0;
+    z-index: 10; 
+    width: 80%;
+    max-width: 600px;
+    margin-top: 60px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    left : 60px;
+}
+.mode-selector {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    top:50px;
+    left:60px;
+}
+
+.modes {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.mode {
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.mode:hover {
+    transform: scale(1.3);
+    color: #793ecc;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+input[type="file"] {
+    margin-top: 15px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.saved-notes {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 500px; 
+    height: 100vh; 
+    overflow-y: auto; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    z-index: 10;
+    right:30px;
+}
+
+.saved-note {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.saved-note img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.saved-note .note-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.saved-note .emoji {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.saved-note .date {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+    text-align: right;
+    font-style: italic;
+}
