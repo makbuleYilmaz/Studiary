@@ -33,9 +33,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $sql = "INSERT INTO iletisim (name, email, message) VALUES ('$name', '$email', '$message')";
     if ($conn->query($sql) === TRUE) {
-        echo "<p>Mesajınız başarıyla gönderildi!</p>";
+        echo "<p>Your message has been sent succesfuly!</p>";
     } else {
-        echo "<p>Hata: " . $conn->error . "</p>";
+        echo "<p>Error: " . $conn->error . "</p>";
     }
 }
 
